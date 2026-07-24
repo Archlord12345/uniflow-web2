@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd artifacts/uniflow-web && pnpm run build",
+  "buildCommand": "cd artifacts/uniflow-web && npm run build",
   "outputDirectory": "artifacts/uniflow-web/dist/public",
-  "installCommand": "pnpm install --no-frozen-lockfile",
+  "installCommand": "npm install",
   "framework": null,
   "env": {},
   "rewrites": [
