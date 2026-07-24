@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "workspaces": [
-    "artifacts/*",
+    "artifacts/api-server",
+    "artifacts/mockup-sandbox",
+    "artifacts/uniflow-web",
     "lib/*",
     "scripts"
   ],
@@ -15,6 +17,11 @@
   },
   "private": true,
   "packageManager": "npm@10.8.2",
+  "overrides": {
+    "esbuild-plugin-pino": {
+      "esbuild": "$esbuild"
+    }
+  },
   "dependencies": {
     "@replit/connectors-sdk": "^0.4.1"
   },
