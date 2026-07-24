@@ -1,8 +1,10 @@
 import path from 'path';
+import { fileURLToPath } from 'url';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const basePath = process.env.BASE_PATH || '/';
 
 export default defineConfig({
@@ -13,17 +15,17 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(import.meta.dirname, 'src'),
+      '@': path.resolve(__dirname, 'src'),
       '@assets': path.resolve(
-        import.meta.dirname,
+        __dirname,
         'attached_assets',
       ),
     },
     dedupe: ['react', 'react-dom'],
   },
-  root: path.resolve(import.meta.dirname),
+  root: __dirname,
   build: {
-    outDir: path.resolve(import.meta.dirname, 'dist/public'),
+    outDir: path.resolve(__dirname, 'dist/public'),
     emptyOutDir: true,
     sourcemap: false,
     minify: 'esbuild',
