@@ -1,0 +1,8 @@
+{
+  "name": "UniFlow",
+  "description": "Plateforme universelle de gestion universitaire centrale du Cameroun",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
