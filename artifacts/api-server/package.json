@@ -1,0 +1,10 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd ../.. && npm run build && mkdir -p artifacts/api-server/dist/public && cp -R dist/public/* artifacts/api-server/dist/public/",
+    "dev": "cd ../.. && npm run dev",
+    "lint": "cd ../.. && npm run lint"
+  }
+}

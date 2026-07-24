@@ -1,0 +1,10 @@
+{
+  "name": "uniflow-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd ../.. && npm run build && mkdir -p artifacts/uniflow-web/dist/public && cp -R dist/public/* artifacts/uniflow-web/dist/public/",
+    "dev": "cd ../.. && npm run dev",
+    "lint": "cd ../.. && npm run lint"
+  }
+}
