@@ -21,6 +21,7 @@ export default defineConfig({
         'attached_assets',
       ),
     },
+    extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json'],
     dedupe: ['react', 'react-dom'],
   },
   root: __dirname,
