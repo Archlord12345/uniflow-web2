@@ -1,8 +1,8 @@
 {
-  "buildCommand": "cd artifacts/uniflow-web && npm run build",
-  "outputDirectory": "artifacts/uniflow-web/dist/public",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
   "installCommand": "npm install --legacy-peer-deps",
-  "framework": null,
+  "framework": "vite",
   "env": {},
   "rewrites": [
     {
